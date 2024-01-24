@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wapper {
+            height: 800px;
+            width: 1089px;
+            background-color: aqua;
+        }
+        
+        header {
+            position: relative;
+        }
+        
+        header h1 {
+            position: absolute;
+            top: 30px;
+            left: 300px;
+        }
+        
+        header h2 {
+            position: absolute;
+            top: 60px;
+            left: 400px;
+            color: blue;
+            text-shadow: chartreuse 10px 10px 3px;
+        }
+        
+        nav {
+            position: relative;
+        }
+        
+        .menu li {
+            position: absolute;
+            height: 50px;
+            width: 150px;
+            background-color: pink;
+            list-style-type: none;
+            border: 2px solid royalblue;
+            border-radius: 10px 0px 10px 0px;
+        }
+        
+        .menu li:nth-child(5) {
+            top: 20px;
+            right: 160px;
+            text-indent: 10px;
+        }
+        
+        .menu li:nth-child(4) {
+            top: 20px;
+            right: 320px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(3) {
+            top: 20px;
+            right: 480px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(2) {
+            top: 20px;
+            right: 640px;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        .menu li:nth-child(1) {
+            top: 40px;
+            right: 800px;
+            line-height: 50px;
+            transform: rotate(-30deg);
+            text-indent: 20px;
+        }
+        
+        .menu li:hover {
+            background-color: salmon;
+        }
+        
+        li a {
+            font-weight: bold;
+            color: seagreen;
+        }
+        
+        li:hover a {
+            font-weight: bold;
+            color: rgb(66, 12, 153);
+        }
+        
+        form #txtemail {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wapper">
+        <header>
+            <img src="../img/anhHeader.jpg" alt="" srcset="" height="150" ;width="1089">
+            <h1>TRUONG DAI HOC CONG NGHIEP</h1>
+            <h2>KHOA CONG NGHE THONG TIN</h2>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">item1</a></li>
+                <li><a href="#">item2</a></li>
+                <li><a href="#">item3</a></li>
+                <li><a href="#">item4</a></li>
+                <li><a href="#">item5</a>
+                    <form action="" method="post">
+                        <input type="email" name="txtEmail" id="txtemail">
+                        <button type="submit">GO</button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</body>
+
+</html>
